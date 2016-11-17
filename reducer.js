@@ -8,6 +8,5 @@ module.exports = function reducer(state, action) {
 
     default:
     return newState
-
   }
 }
