@@ -3,7 +3,9 @@ const redux = require('redux')
 
 const reducer = require('./reducer')
 
-const initialState = {}
+const initialState = {
+  
+}
 
 const store = redux.createStore(reducer, initialState)
 
