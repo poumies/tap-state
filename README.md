@@ -9,7 +9,7 @@ it's a real sweet app
 
 ```
 git clone https://github.com/mel-booth/tap-spec
-cd 
+cd
 npm install
 ```
 
@@ -31,4 +31,11 @@ npm test
 
 ```
 npm run deploy
+
 ```
+
+# User Stories
+
+1. Player pushes key to beat the reaction time of opponent when an image appears 
+
+2. Player sees the ongoing score.
