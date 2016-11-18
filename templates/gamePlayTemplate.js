@@ -1,13 +1,17 @@
 var h = require('hyperscript')
+var html = require('yo-yo')
 
 module.exports = gamePlayTemplate
 
 function gamePlayTemplate (state, dispatch) {
   const { players, shapes } = state
-  console.log(shapes[0].shape);
-  return h('div', {onkeypress: () => handleKeyPress}, [
-            h('svg', { width: "64px", height: "64px" }, h('path', {d: shapes[0].shape}))
-          ])
+  return h('div', {onkeypress: () => handleKeyPress}, shapes.map((shape) => {
+    console.log(shape);
+    return html`
+    <svg width="64px" height="64px" ><path d=${shape.shape}/></svg>
+    `
+  })
+    )
 }
 
 function handleKeyPress(e) {
