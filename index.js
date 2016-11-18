@@ -20,6 +20,6 @@ const dispatch = store.dispatch
 
 const updateView = () => {
   const initialState = store.getState()
-  const newState = render(initialState.shapes, dispatch)
+  const newState = render(initialState.images, dispatch)
   morph(products, newState)
 }
