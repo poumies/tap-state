@@ -2,16 +2,14 @@ const morph = require('morphdom')
 const redux = require('redux')
 
 const reducer = require('./reducer')
-const shapes - require('./shapes')
+const shapes = require('./shapes').shapes
 
 const initialState = {
   players: [
     {id: 1, score: 0},
     {id: 2, score: 0}
   ],
-  images: [
-    shapes
-  ]
+  shapes  
 }
 
 const store = redux.createStore(reducer, initialState)
